@@ -74,8 +74,8 @@
           <span class="logo-text">LASEM HERITAGE</span>
         </a>
 
-        <!-- Menu navigasi (di layar besar tampil horizontal) -->
-        <div class="d-none d-lg-flex gap-2 ms-auto">
+        <!-- Menu navigasi (di layar besar: teks + ikon) -->
+        <div class="d-none d-lg-flex gap-2 ms-auto align-items-center">
           <a class="nav-pill" href="#profil">
             <i class="bi bi-person-fill"></i> Profil
           </a>
@@ -96,14 +96,24 @@
           </a>
         </div>
 
-        <!-- Menu di layar kecil (HP): tampil vertikal di bawah logo -->
-        <div class="d-flex d-lg-none flex-wrap gap-1 ms-2">
-          <a class="nav-pill-sm" href="#profil"><i class="bi bi-person-fill"></i></a>
-          <a class="nav-pill-sm" href="#sejarah"><i class="bi bi-compass"></i></a>
-          <a class="nav-pill-sm" href="#kawasan"><i class="bi bi-geo-alt-fill"></i></a>
-          <a class="nav-pill-sm" href="#budaya"><i class="bi bi-flower1"></i></a>
-          <a class="nav-pill-sm" href="#kuliner"><i class="bi bi-cup-hot-fill"></i></a>
-          <a class="nav-pill-sm" href="#toleransi"><i class="bi bi-heart-fill"></i></a>
+        <!-- Menu di layar tablet (md): teks singkat -->
+        <div class="d-none d-md-flex d-lg-none flex-wrap gap-1 ms-auto align-items-center">
+          <a class="nav-pill" href="#profil"><i class="bi bi-person-fill"></i> Profil</a>
+          <a class="nav-pill" href="#sejarah"><i class="bi bi-compass"></i> Sejarah</a>
+          <a class="nav-pill" href="#kawasan"><i class="bi bi-geo-alt-fill"></i> Kawasan</a>
+          <a class="nav-pill" href="#budaya"><i class="bi bi-flower1"></i> Budaya</a>
+          <a class="nav-pill" href="#kuliner"><i class="bi bi-cup-hot-fill"></i> Kuliner</a>
+          <a class="nav-pill" href="#toleransi"><i class="bi bi-heart-fill"></i> Toleransi</a>
+        </div>
+
+        <!-- Menu di layar HP kecil (< md): hanya ikon bulat -->
+        <div class="d-flex d-md-none gap-1 ms-auto align-items-center flex-wrap">
+          <a class="nav-pill-sm" href="#profil" title="Profil"><i class="bi bi-person-fill"></i></a>
+          <a class="nav-pill-sm" href="#sejarah" title="Sejarah"><i class="bi bi-compass"></i></a>
+          <a class="nav-pill-sm" href="#kawasan" title="Kawasan"><i class="bi bi-geo-alt-fill"></i></a>
+          <a class="nav-pill-sm" href="#budaya" title="Budaya"><i class="bi bi-flower1"></i></a>
+          <a class="nav-pill-sm" href="#kuliner" title="Kuliner"><i class="bi bi-cup-hot-fill"></i></a>
+          <a class="nav-pill-sm" href="#toleransi" title="Toleransi"><i class="bi bi-heart-fill"></i></a>
         </div>
 
       </div>
@@ -136,8 +146,8 @@
           lahirnya Batik Tiga Negeri, kuliner halal yang lezat, hingga semangat persatuan melawan penjajah.
         </p>
 
-        <!-- Tombol Aksi -->
-        <div class="d-flex flex-wrap justify-content-center gap-3">
+        <!-- Tombol Aksi — stack vertikal di HP, horizontal di tablet ke atas -->
+        <div class="d-flex flex-column flex-sm-row flex-wrap justify-content-center gap-3">
           <a href="#profil" class="btn-hero-gold">
             <i class="bi bi-person-badge me-2"></i>Lihat Profil Habib
           </a>
@@ -199,7 +209,7 @@
                 </li>
                 <li>
                   <i class="bi bi-trophy-fill icon-gold"></i>
-                  <span><strong>Ranking:</strong> Top Committer GitHub Indonesia</span>
+                  <span><strong>Ranking:</strong> #85 Top Committer GitHub Indonesia</span>
                 </li>
                 <li>
                   <i class="bi bi-code-slash icon-blue"></i>
@@ -246,21 +256,21 @@
               dengan minat mendalam pada keamanan siber sebagai <em>Junior Bug Hunter</em>.
             </p>
 
-            <!-- Statistik angka -->
+      <!-- Statistik angka — 1 baris di HP, 3 kolom di tablet ke atas -->
             <div class="row g-3 my-3">
-              <div class="col-sm-4">
+              <div class="col-4">
                 <div class="stat-card text-center border rounded-3 p-3">
                   <div class="stat-number">1.200+</div>
                   <div class="stat-label">Total Public Commits</div>
                 </div>
               </div>
-              <div class="col-sm-4">
+              <div class="col-4">
                 <div class="stat-card text-center border rounded-3 p-3">
-                  <div class="stat-number stat-gold">Top 100</div>
+                  <div class="stat-number stat-gold">Top 85</div>
                   <div class="stat-label">GitHub Committer Indonesia</div>
                 </div>
               </div>
-              <div class="col-sm-4">
+              <div class="col-4">
                 <div class="stat-card text-center border rounded-3 p-3">
                   <div class="stat-number stat-green">0 JS</div>
                   <div class="stat-label">Website Super Ringan</div>
@@ -276,7 +286,7 @@
               <li>
                 <i class="bi bi-check2-circle icon-green fs-5"></i>
                 <div>
-                  <strong>Peringkat Bergengsi di Committers Top Indonesia</strong> — Masuk jajaran
+                  <strong>Peringkat ke - 85 Bergengsi di Committers Top Indonesia</strong> — Masuk jajaran
                   kontributor open-source paling aktif di Indonesia berdasarkan data metrik GitHub.
                 </div>
               </li>
